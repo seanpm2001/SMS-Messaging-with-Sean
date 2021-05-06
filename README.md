@@ -3,9 +3,9 @@
 
 Read in a different language:
 
-[ar عربى](README_AR.md) [zh-t 中國傳統的）](README_ZH-T.md)[**en-us**](README.md) [fr français](README_FR.md) [de Deutsch](README_DE.md) [ja 日本語](README_JA.md) [ko-south 韓國語](README_KO_SOUTH.md) [pl polski](README_PL.md) [ru русский](README_RU.md) [es en español](README_ES.md)
+[ar عربى](/.github/README_AR.md) [zh-t 中國傳統的）](/.github/README_ZH-T.md)[**en-us**](README.md) [fr français](/.github/README_FR.md) [de Deutsch](/.github/README_DE.md) [ja 日本語](/.github/README_JA.md) [ko-south 韓國語](/.github/README_KO_SOUTH.md) [pl polski](/.github/README_PL.md) [ru русский](/.github/README_RU.md) [es en español](/.github/README_ES.md)
 
-Translations in languages other than English are machine translated and are not yet accurate. No errors have been fixed yet as of February 5th 2021. Please report translation errors [here](https://github.com/seanpm2001/SMS-Messaging-with-Sean/issues/) make sure to backup your correction with sources and guide me, as I don't know languages other than English well (I plan on getting a translator eventually) please cite [wiktionary](https://en.wiktionary.org) and other sources in your report. Failing to do so will result in a rejection of the correction being published.
+Translations in languages other than English are machine translated and are not yet accurate. No errors have been fixed yet as of May 5th 2021. Please report translation errors [here](https://github.com/seanpm2001/SMS-Messaging-with-Sean/issues/) make sure to backup your correction with sources and guide me, as I don't know languages other than English well (I plan on getting a translator eventually) please cite [wiktionary](https://en.wiktionary.org) and other sources in your report. Failing to do so will result in a rejection of the correction being published.
 
 # SMS Messaging with Sean
 
@@ -102,7 +102,8 @@ General info on the rules, responses, time, language, privacy, and security of m
 
 ## About
 
-See above. This repository is a guide to messaging with me via SMS messaging (text messaging)
+See above. This repository is a guide to messaging me via text. Despite this project using the term SMS, it is actually full-on texting support. Prior to a May 5th 2021 edit, I just associated SMS as text messaging. It is still being used as a loose term. <!-- This repository is a guide to messaging with me via SMS messaging (text messaging) !-->
+
 
 ***
 
@@ -138,7 +139,7 @@ Image credit: [defectivebydesign.org/drm-free/...](https://www.defectivebydesign
 
 Currently, I am the only contributer. Contributing is not allowed for this project from others, as this is a personal project.
 
-> * 1. [seanpm2001](https://github.com/seanpm2001/) - 8 commits (As of Wednesday, March 10th 2021 at 8:35 pm)
+> * 1. [seanpm2001](https://github.com/seanpm2001/) - 24 commits (As of Wednesday, May 5th 2021 at 8:17 pm)
 
 > * 2. No other contributers.
 
@@ -218,20 +219,13 @@ Messages in this format are automated and are processed through a server when th
 
 Commands:
 
+<!-- (Note from May 5th 2021, this command data is really bad, and is going to be completely rewritten) !--> <!-- pure crap !-->
+
 ```python
-;\\//:change rule: (sleepTime=2300) # Sets the sleep time to 11:00 pm PST
-
-;\\//:print "hello world" # Everything after the # is treated as a comment and ignored
-
-;\\//:sudo get privacy # Stops message archive collection
-
-;\\//:sudo remove privacy # Resumes message archive collection (command currently unavailable)
-```
-
-Don't want to keep tying the bytecode? Try this for rapid commands (up to 10 at once,)
-
-```garbled
-@%b10_/.*<ov>[]\\
+timeRule sleep = 2300 # Sets the sleep time to 11:00 pm PST
+print "hello world" # Everything after the # is treated as a comment and ignored
+stop.log # Stops message archive collection
+start.log # Resumes message archive collection (command currently unavailable)
 ```
 
 ```minecraft
@@ -243,16 +237,21 @@ Don't want to keep tying the bytecode? Try this for rapid commands (up to 10 at 
 @pst - shows current Pacific Standard Time
 ```
 
-The complex 6 char bytecode is so that no conversation will trigger its usage.
+This little code will prevent your next message from being sent and will just enter it as a command. The bytecode itself will not be sent as a message/
 
-```python
-Def School():
-	response = bool(false)
+```bytecode
+%%OFF$
 ```
+
+The complex 6 char bytecode is so that no conversation will trigger its usage.
 
 These commands are coming soon
 
 SMS-Terminal
+
+```
+schoolday = true
+```
 
 When you define that you go to school:
 
@@ -300,19 +299,15 @@ Other sensitive info to never text to me includes:
 
 Also, do not text me any of the following:
 
-* Penis pictures
+* Genital pictures
 
-* Vagina pictures
-
-* Breast pictures
-
-* Buttocks pictures
+* Other sexual pictures (pictures can contain sexual humor, just don't send me this too much)
 
 * Pornography/erotica
 
-* Gore videos
+* Gore videos and images
 
-I will block you on the spot if you send any of these 6. You can't really scar me, I have already been scarred before by this (gore videos)
+I will block you on the spot if you send any of these 4.
 
 You can send me almost anything else, such as:
 
@@ -330,7 +325,7 @@ Unfortunately, I have to limit you to 256 memes per day. I have to set some boun
 
 ### Emoji
 
-My device currently supports Emojis from Emoji 1.0 to Emoji 12.0 (As of March 10th 2021) I am fine with Emoji usage, just keep it in moderation. Unless you are sending me a copypasta, messages with text shouldn't contain more
+My device currently supports Emojis from Emoji 1.0 to Emoji 12.0 (As of March 10th 2021) I am fine with Emoji usage, just keep it in moderation. Unless you are sending me a copypasta, messages with text shouldn't contain an excessive amount of emojis (such as 1 for every word) responding with just a few emojis is fine, again just remember to keep it in moderation.
 
 ### Special effects
 
@@ -377,7 +372,9 @@ Also, I don't use your texting data for advertisements EVER. I have no use for t
 If you are using Google Search, Google Chrome, or a mixture of the 2, please do not send me Google AMP links. I will not respond to them.
 Google made a service called AMP that threatens the open Internet and gives Google control of how a website should function. Ever since Google Chrome 69, the full URL is hidden in the address bar. When sending me a link, look for the following:
 
-.amp.google.
+```link
+.amp.google
+```
 
 And take it out.
 
@@ -387,7 +384,7 @@ Also check out [Google AMP anti-](https://github.com/seanpm2001/Why-you-should-a
 
 ### Facebook and Instagram
 
-I do not have an accessible FB or IG account, so I can't view what you send me through here.
+I do not have an accessible FB (FaceBook) or IG (Instagram) account, so I can't view what you send me through here.
 
 ### Stickers
 
@@ -399,13 +396,16 @@ You can send me stickers, but use them in moderation. Also, try to use them crea
 
 File type: `Markdown (*.md)`
 
-File version: `1 (Wednesday, March 10th 2021 at 2:15 pm)`
+File version: `2 (Wednesday, May 5th 2021 at 8:20 pm)`
 
-Line count: `0,497`
+Line count: `0,523`
 
 ***
 
 ## README version history
+
+<details>
+	<summary><H4>View older versions of this article (click/tap here to expand/collapse)</H4></summary>
 
 Version 1 (Wednesday, March 10th 2021 at 2:15 pm)
 
@@ -479,13 +479,39 @@ Version 1 (Wednesday, March 10th 2021 at 2:15 pm)
 
 > * No other changes in version 1
 
-Version 2 (Coming soon)
+Version 2 (Wednesday, May 5th 2021 at 8:17 pm)
+
+> Changes:
+
+> * Fixed translation links
+
+> * Heavy cleanup and fixes to the article, taking out and adding many sections
+
+> * Updated the about section
+
+> * Updated the file info section
+
+> * Updated the file history section (made it into a dropdown, something new I have started doing with Markdown today)
+
+> * No other changes in version 2
+
+Version 3 (Coming soon)
 
 > Changes:
 
 > * Coming soon
 
-> * No other changes in version 2
+> * No other changes in version 3
+
+Version 4 (Coming soon)
+
+> Changes:
+
+> * Coming soon
+
+> * No other changes in version 4
+
+</details>
 
 ***
 
